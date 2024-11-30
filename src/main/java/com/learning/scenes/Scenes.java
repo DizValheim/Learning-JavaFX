@@ -1,10 +1,10 @@
-package com.example.hellofx;
+package com.learning.scenes;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
@@ -14,6 +14,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class Scenes extends Application {
 
     public static void main(String[] args) {
@@ -21,7 +23,7 @@ public class Scenes extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws IOException {
         Group root = new Group();
         Scene scene = new Scene(root, 600, 600, Color.LIGHTSKYBLUE);
 
@@ -69,6 +71,7 @@ public class Scenes extends Application {
 //        Image image = new Image();
 //        ImageView imageView = new ImageView(image);
 //        imageView.setY(400);
+
 
         root.getChildren().add(text);
         root.getChildren().add(line);
