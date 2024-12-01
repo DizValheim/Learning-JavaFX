@@ -1,0 +1,11 @@
+.root {
+    -fx-background-color: #111111;
+}
+
+.label {
+    -fx-font-family: "Lucida Console";
+    -fx-text-fill: "white";
+    -fx-alignment: center;
+}
+
+
