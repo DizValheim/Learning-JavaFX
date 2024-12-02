@@ -1,7 +1,6 @@
-package com.learning.textfield;
+package com.learning.checkbox;
 
 import javafx.application.Application;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -9,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class TextFieldMain extends Application {
+public class CheckboxMain extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -17,7 +16,7 @@ public class TextFieldMain extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/learning/textfield/textfield-view.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/learning/checkbox/checkbox-view.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
